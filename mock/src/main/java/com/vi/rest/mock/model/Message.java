@@ -2,15 +2,16 @@ package com.vi.rest.mock.model;
 
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class Message {
 	
-	private long id;
-	private String message;
-	private Date created;
-	private String author;
+	@XmlElement private long id;
+	@XmlElement private String message;
+	@XmlElement private Date created;
+	@XmlElement private String author;
 	
 	public Message() {
 	//no opt constructor

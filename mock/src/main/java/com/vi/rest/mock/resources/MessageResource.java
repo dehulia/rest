@@ -11,6 +11,7 @@ import com.vi.rest.mock.model.Message;
 import com.vi.rest.mock.service.MessageService;
 
 @Path("/messages")
+
 public class MessageResource {
 
 	MessageService messageService = new MessageService();
